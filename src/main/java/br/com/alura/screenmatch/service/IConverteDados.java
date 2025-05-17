@@ -1,8 +1,6 @@
 package br.com.alura.screenmatch.service;
 
-import br.com.alura.screenmatch.model.DadosSerie;
-
 public interface IConverteDados {
-    <T> T obterDados(String json, Class<T> classe);
-    String gravarDados(Class classe );
+    <T> T getData(String json, Class<T> classed);
+    <T> String saveData(T t);
 }
